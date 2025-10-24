@@ -16,6 +16,8 @@ export default async function QcRunDetailPage({ params }: PageProps) {
     include: {
       checks: { orderBy: { name: "asc" } },
       links: { orderBy: { url: "asc" } },
+      issueFeedback: true,
+      auditFeedback: true,
     },
   });
 

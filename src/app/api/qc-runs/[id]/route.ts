@@ -17,6 +17,8 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
     include: {
       checks: { orderBy: { name: "asc" } },
       links: { orderBy: { url: "asc" } },
+      issueFeedback: true,
+      auditFeedback: true,
     },
   });
 

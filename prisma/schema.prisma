@@ -24,6 +24,8 @@ model QcRun {
   finishedAt   DateTime?
   checks       CheckResult[]
   links        LinkCheck[]
+  issueFeedback AuditIssueFeedback[]
+  auditFeedback AuditFeedback?
 }
 
 model CheckResult {
@@ -34,6 +36,7 @@ model CheckResult {
   name    String
   pass    Boolean
   details Json?
+  feedback AuditIssueFeedback?
 }
 
 model LinkCheck {
@@ -104,4 +107,33 @@ model AdditionalRule {
   active  Boolean @default(true)
 
   @@index([silo, entity, active])
+}
+
+model AuditIssueFeedback {
+  id        String       @id @default(cuid())
+  runId     String
+  checkId   String
+  status    IssueStatus  @default(open)
+  feedback  String?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  run       QcRun        @relation(fields: [runId], references: [id], onDelete: Cascade)
+  check     CheckResult  @relation(fields: [checkId], references: [id], onDelete: Cascade)
+
+  @@unique([checkId])
+}
+
+model AuditFeedback {
+  id        String   @id @default(cuid())
+  runId     String   @unique
+  feedback  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  run       QcRun    @relation(fields: [runId], references: [id], onDelete: Cascade)
+}
+
+enum IssueStatus {
+  open
+  resolved
+  unwanted
 }

@@ -1,10 +1,18 @@
 import { Parser } from "json2csv";
 
-import type { CheckResult, LinkCheck, QcRun } from "@prisma/client";
+import type {
+  AuditFeedback,
+  AuditIssueFeedback,
+  CheckResult,
+  LinkCheck,
+  QcRun,
+} from "@prisma/client";
 
 export type RunWithRelations = QcRun & {
   checks: CheckResult[];
   links: LinkCheck[];
+  issueFeedback: AuditIssueFeedback[];
+  auditFeedback: AuditFeedback | null;
 };
 
 export function buildRunCsv(run: RunWithRelations): string {
@@ -44,13 +52,20 @@ export function buildRunCsv(run: RunWithRelations): string {
     },
   );
 
+  const feedbackMap = new Map(run.issueFeedback.map((entry) => [entry.checkId, entry]));
+
   run.checks.forEach((check) => {
+    const feedback = feedbackMap.get(check.id);
     rows.push({
       section: "check",
       name: check.name,
       type: check.type,
       status: check.pass ? "pass" : "fail",
-      details: check.details ? JSON.stringify(check.details) : "",
+      details: JSON.stringify({
+        checkDetails: check.details ?? null,
+        resolution: feedback?.status ?? "open",
+        reviewerFeedback: feedback?.feedback ?? null,
+      }),
     });
   });
 

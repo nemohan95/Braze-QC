@@ -13,6 +13,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
     include: {
       checks: { orderBy: { name: "asc" } },
       links: { orderBy: { url: "asc" } },
+      issueFeedback: true,
+      auditFeedback: true,
     },
   });
 

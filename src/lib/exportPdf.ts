@@ -11,6 +11,10 @@ function escapeHtml(value: string | number | boolean | null | undefined): string
 }
 
 export function buildRunHtml(run: RunWithRelations): string {
+  const issueFeedbackMap = new Map(
+    run.issueFeedback.map((entry) => [entry.checkId, entry]),
+  );
+
   const runSummaryRows = [
     `<tr><th align="left">Run ID</th><td>${escapeHtml(run.id)}</td></tr>`,
     `<tr><th align="left">Status</th><td>${escapeHtml(run.status)}</td></tr>`,
@@ -18,14 +22,19 @@ export function buildRunHtml(run: RunWithRelations): string {
     `<tr><th align="left">Entity</th><td>${escapeHtml(run.entity)}</td></tr>`,
     `<tr><th align="left">Model</th><td>${escapeHtml(run.modelVersion ?? "unknown")}</td></tr>`,
     `<tr><th align="left">Summary</th><td>${run.summaryPass === null || run.summaryPass === undefined ? "unknown" : run.summaryPass ? "Pass" : "Fail"}</td></tr>`,
+    `<tr><th align="left">Reviewer Feedback</th><td>${escapeHtml(run.auditFeedback?.feedback ?? "")}</td></tr>`,
   ].join("");
 
   const checkRows = run.checks
     .map(
-      (check) =>
-        `<tr><td>${escapeHtml(check.name)}</td><td>${escapeHtml(check.type)}</td><td>${check.pass ? "Pass" : "Fail"}</td><td>${
+      (check) => {
+        const feedback = issueFeedbackMap.get(check.id);
+        const resolution = feedback?.status ?? "open";
+        const note = feedback?.feedback ?? "";
+        return `<tr><td>${escapeHtml(check.name)}</td><td>${escapeHtml(check.type)}</td><td>${check.pass ? "Pass" : "Fail"}</td><td>${escapeHtml(resolution)}</td><td>${escapeHtml(note)}</td><td>${
           check.details ? escapeHtml(JSON.stringify(check.details, null, 2)) : ""
-        }</td></tr>`,
+        }</td></tr>`;
+      },
     )
     .join("");
 
@@ -58,7 +67,7 @@ export function buildRunHtml(run: RunWithRelations): string {
     <h2>Checks</h2>
     <table>
       <thead>
-        <tr><th>Name</th><th>Type</th><th>Status</th><th>Details</th></tr>
+        <tr><th>Name</th><th>Type</th><th>Status</th><th>Resolution</th><th>Reviewer Notes</th><th>Details</th></tr>
       </thead>
       <tbody>${checkRows}</tbody>
     </table>
