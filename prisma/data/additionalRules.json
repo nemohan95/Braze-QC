@@ -1,0 +1,860 @@
+[
+  {
+    "topic": "Interest rate",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "Interest payments are available to Listed Stocks accounts with a £/$/€2,000 minimum equity or cash balance. The annual interest rates payable are variable and may change without notice. Please ensure you visit this site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/uk/earn-interest/"
+    ],
+    "notes": "Please note that 'cash balance' has been added.",
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Interest payments are available to Listed Stocks accounts with a £/$/€2,000 minimum equity or cash balance. The annual interest rates payable are variable and may change without notice. Please ensure you visit this site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/eu/earn-interest/"
+    ],
+    "notes": "Please note that 'cash balance' has been added.",
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Interest payments are available to Listed Stocks accounts with a £/$/€2,000 minimum equity or cash balance. The annual interest rates payable are variable and may change without notice. Please ensure you visit this site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/en/earn-interest/"
+    ],
+    "notes": "Please note that 'cash balance' has been added.",
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Interest payments are available to Spread Bet accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/uk/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Interest payments are available to Spread Bet accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/eu/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Interest payments are available to Spread Bet accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/en/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "Interest payments are available to CFD accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/uk/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Interest payments are available to CFD accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/eu/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Interest rate",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Interest payments are available to CFD accounts with a £/$/€2,000 minimum equity. The annual interest rates payable are variable and may change without notice. Please ensure you visit the site regularly to understand the eligibility criteria and the current rate payable.",
+    "links": [
+      "https://www.tradu.com/en/earn-interest/"
+    ],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Best Spread",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Over 95% of the time in the past year compared to our top competitors.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trusted by traders in over 200 countries",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Based on Stratos Group data.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Speed data",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "The execution speed is the Stratos Group average round turn execution time for all offered FX/CFD instruments, calculated for the year of 2024.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "TipRanks",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TipRanks, Stock Screener, ChartIQ, dxFeed and Trading Central. Tradu does not endorse any product or service of these Service Providers. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trade/Invest/CFD",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "For emails, use the full version of the Risk Warning for each entity. For push notifications, use the shortened version of the Risk Warning for each entity.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading View",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with TradingView. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "Spread Bet",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "Spread Bet",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "Spread Bet",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "CFD",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "CFD",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "CFD",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "LISTED STOCKS",
+    "entity": "UK",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "LISTED STOCKS",
+    "entity": "EU",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Trading Intelligence",
+    "silo": "LISTED STOCKS",
+    "entity": "ROW",
+    "text": "Tradu is an independent legal entity and is not affiliated with Trading Intelligence. Tradu does not endorse any product or service of this Service Provider. Nothing associated with this promotion shall be considered a solicitation to buy or an offer to sell any product or service to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws or regulations of such jurisdiction.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Visa Disclaimer",
+    "silo": "Wallet",
+    "entity": "EU",
+    "text": "Your card is issued by Modulr Finance B.V. pursuant to a license by Visa Europe. Visa and the Visa brand mark are registered trademarks of Visa Europe.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Visa Disclaimer",
+    "silo": "Wallet",
+    "entity": "UK",
+    "text": "Your card is issued by Modulr FS Limited pursuant to a license by Visa Europe. Visa and the Visa brand mark are registered trademarks of Visa Europe.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Wallet safeguarding",
+    "silo": "Wallet",
+    "entity": "UK",
+    "text": "Stratos Markets Limited is a distributor of Modulr FS Limited, a company registered in England and Wales with company number 09897919, which is authorised and regulated by the Financial Conduct Authority as an Electronic Money Institution (Firm Reference Number: 900573) for the issuance of electronic money and payment services. Your account and related payment services are provided by Modulr FS Limited. Whilst Electronic Money products are not covered by the Financial Services Compensation Scheme (FSCS) your funds will be held in one or more segregated accounts and safeguarded in line with the Electronic Money Regulations 2011 - for more information please see here. Stratos Markets Limited also provides other regulated services. These are separate and unrelated to the account and payment services you receive from Modulr FS Limited.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Wallet safeguarding",
+    "silo": "Wallet",
+    "entity": "EU",
+    "text": "Stratos Europe Limited is a partner of Modulr Finance B.V., a company registered in the Netherlands with company number 81852401, which is authorised and regulated by the Dutch Central Bank (DNB) as an Electronic Money Institution (Firm Reference Number: R182870) for the issuance of electronic money and payment services. Your account and related payment services are provided by Modulr Finance B.V. Your funds will be held in one or more segregated accounts and safeguarded in line with the Financial Supervision Act (Wet op het Financieel Toezicht, Wft) - for more information please see here. Stratos Europe Limited also provides other regulated services. These are separate and unrelated to the account and payment services you receive from Modulr Finance B.V.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Wallet promotion",
+    "silo": "Wallet",
+    "entity": "UK",
+    "text": "Wallet launch promotion - statement valid for a limited period of time, and only until the launch promotional period applies. Full terms and conditions here.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Wallet promotion",
+    "silo": "Wallet",
+    "entity": "EU",
+    "text": "Wallet launch promotion - statement valid for a limited period of time, and only until the launch promotional period applies. Full terms and conditions here.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Unbeatable pricing",
+    "silo": "CRYPTO",
+    "entity": "ROW",
+    "text": "Tradu's cost includes a 0.1% commission with an instant rebate of 0.05%. Comparative pricing is based on a standard account type and information from broker websites as of 1st April 2025. It does not reflect the entire market. Actual fees may vary depending on factors like account type, rebates, trading volume, and market conditions. Rebate of 0.05% on orders over $20,000 and 0.02% back on orders over $5,000.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Unbeatable pricing",
+    "silo": "CRYPTO",
+    "entity": "EU",
+    "text": "Tradu's cost includes a 0.1% commission with an instant rebate of 0.05%. Comparative pricing is based on a standard account type and information from broker websites as of 1st April 2025. It does not reflect the entire market. Actual fees may vary depending on factors like account type, rebates, trading volume, and market conditions. Rebate of 0.05% on orders over €20,000 and 0.02% back on orders over €5,000.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Free access to TradingView",
+    "silo": "CRYPTO",
+    "entity": "ROW",
+    "text": "*Terms and conditions apply.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Free access to TradingView",
+    "silo": "CRYPTO",
+    "entity": "EU",
+    "text": "*Terms and conditions apply.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Earn instant rebates",
+    "silo": "CRYPTO",
+    "entity": "ROW",
+    "text": "Rebate of 0.05% on orders over $20,000 and 0.02% back on orders over $5,000.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "Earn instant rebates",
+    "silo": "CRYPTO",
+    "entity": "EU",
+    "text": "Rebate of 0.05% on orders over €20,000 and 0.02% back on orders over €5,000.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "There are no hidden costs, and no weekend charges",
+    "silo": "Wallet",
+    "entity": "UK",
+    "text": "Wallet launch promotion - statement valid for a limited period of time, and only until the launch promotional period applies. Full terms and conditions here.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  },
+  {
+    "topic": "There are no hidden costs, and no weekend charges",
+    "silo": "Wallet",
+    "entity": "EU",
+    "text": "Wallet launch promotion - statement valid for a limited period of time, and only until the launch promotional period applies. Full terms and conditions here.",
+    "links": [],
+    "notes": null,
+    "version": "v1",
+    "active": true
+  }
+]

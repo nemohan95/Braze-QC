@@ -1,0 +1,9 @@
+entity,variant,siloFilter,text,version,active
+UK,full,,"CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 62% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Your capital is at risk.",v1,true
+UK,short,,"62% of retail CFD accounts lose money.",v1,true
+UK,cfd_and_spreadbet,SB/CFD,"Spread bets and CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 62% of retail investor accounts lose money when trading spread bets and CFDs with this provider. You should consider whether you understand how spread bets and CFDs work and whether you can afford to take the high risk of losing your money. Your capital is at risk.",v1,true
+EU,full,,"CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 65% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Your capital is at risk.",v1,true
+EU,short,,"65% of retail CFD accounts lose money.",v1,true
+EU CY,full,,"CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 65% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Your capital is at risk.",v1,true
+EU CY,short,,"65% of retail CFD accounts lose money.",v1,true
+ROW,full,,"The value of your investment can fluctuate. Losses can exceed deposits.",v1,true

@@ -1,0 +1,107 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model QcRun {
+  id           String        @id @default(cuid())
+  name         String?
+  brazeUrl     String
+  copyDocText  String
+  copyDocHtml  String?
+  copyDocLinks Json?
+  silo         String
+  entity       String
+  emailType    String        @default("marketing")
+  status       String        @default("queued")
+  summaryPass  Boolean?
+  modelVersion String?
+  startedAt    DateTime      @default(now())
+  finishedAt   DateTime?
+  checks       CheckResult[]
+  links        LinkCheck[]
+}
+
+model CheckResult {
+  id      String  @id @default(cuid())
+  runId   String
+  run     QcRun   @relation(fields: [runId], references: [id], onDelete: Cascade)
+  type    String
+  name    String
+  pass    Boolean
+  details Json?
+}
+
+model LinkCheck {
+  id         String  @id @default(cuid())
+  runId      String
+  run        QcRun   @relation(fields: [runId], references: [id], onDelete: Cascade)
+  url        String
+  statusCode Int?
+  ok         Boolean?
+  redirected Boolean?
+  finalUrl   String?
+  notes      String?
+}
+
+model RiskRule {
+  id         String  @id @default(cuid())
+  entity     String
+  variant    String
+  siloFilter String?
+  text       String
+  version    String  @default("v1")
+  active     Boolean @default(true)
+
+  @@index([entity, siloFilter, active])
+}
+
+model DisclaimerRule {
+  id      String  @id @default(cuid())
+  entity  String
+  silo    String?
+  kind    String
+  text    String
+  version String  @default("v1")
+  active  Boolean @default(true)
+  emailType String @default("marketing")
+}
+
+model KeywordRule {
+  id           String  @id @default(cuid())
+  keyword      String
+  requiredText String
+  active       Boolean @default(true)
+}
+
+model LinkRule {
+  id          String  @id @default(cuid())
+  entity      String
+  silo        String?
+  emailType   String  @default("marketing")
+  kind        String
+  matchType   String  @default("contains")
+  hrefPattern String
+  notes       String?
+  active      Boolean @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AdditionalRule {
+  id      String  @id @default(cuid())
+  topic   String
+  silo    String
+  entity  String
+  text    String
+  links   Json?
+  notes   String?
+  version String  @default("v1")
+  active  Boolean @default(true)
+
+  @@index([silo, entity, active])
+}

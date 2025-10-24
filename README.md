@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Email QC MVP
 
-## Getting Started
+Email QC automates quality control for Braze marketing emails. Paste a Braze preview URL, attach the approved copy doc, pick the silo and entity, and the app validates the send with AI, rule matrices, and link checks.
 
-First, run the development server:
+## Features
+- GPT-4.1 Responses API validates subject, preheader, body copy, CTAs, disclaimers, and keyword-triggered statements using a strict JSON schema.
+- Entity/silo risk, keyword, and additional rules imported from CSV; disclaimers are managed directly in Postgres via the admin console.
+- Link checker follows redirects (HEAD / GET with fallback), flags dev/staging hosts, and records status codes plus final destinations.
+- Report pages show per-check results, link tables, downloadable CSV exports, and client-side PDF generation with `html2canvas` + `jspdf`.
+- Admin rules console surfaces live data, supports inline disclaimer editing, and accepts CSV uploads for the remaining rule tables.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack
+- Next.js 14 App Router (TypeScript, Tailwind)
+- Prisma ORM + PostgreSQL (Railway recommended)
+- OpenAI GPT-4.1 Responses API
+- Axios, Cheerio, p-limit, json2csv, html2canvas, jspdf, mammoth
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Prerequisites
+- Node.js 18+
+- npm
+- PostgreSQL database (Railway or local)
+- OpenAI API key with access to `gpt-4.1`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Local Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Configure environment variables in `.env.local` (sample created at repo root):
+   ```env
+   DATABASE_URL="postgresql://<user>:<password>@<host>:<port>/<db>?schema=public"
+   OPENAI_API_KEY=""
+   ALLOWED_PREVIEW_HOSTS="braze-02-shareable-preview-eu.s3.eu-central-1.amazonaws.com"
+   APPROVED_LINK_DOMAINS="tradu.com,app.tradu.com,braze-02-shareable-preview-eu.s3.eu-central-1.amazonaws.com"
+   ```
+3. Generate Prisma client and run migrations:
+   ```bash
+   npx prisma generate
+   npx prisma migrate dev --name init
+   ```
+4. Optionally seed the baseline disclaimer matrix:
+   ```bash
+   npx prisma db seed
+   ```
+5. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+6. Open `http://localhost:3000` and run a QC job via **New QC**. Use `/admin/rules` to manage disclaimers and import CSVs before running production checks.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Rule CSV Templates
+Seed templates live under `data/` and match the required headers:
+- `data/risk_rules.csv`
+- `data/keyword_rules.csv`
+- `data/additional_rules.csv`
 
-## Learn More
+Upload these from the Admin page to refresh the non-disclaimer rule tables. Disclaimers (including the risk warnings above) are managed directly in the UI and can be filtered per entity and silo.
 
-To learn more about Next.js, take a look at the following resources:
+## API Overview
+- `POST /api/qc-runs` – create a QC job (rate-limited by IP). Fetches Braze HTML, parses content, runs GPT evaluation, checks links, and persists results.
+- `GET /api/qc-runs` – list runs with optional `silo`, `entity`, `from`, `to`, `page`, `pageSize` filters.
+- `GET /api/qc-runs/:id` – retrieve a run with checks and link data.
+- `GET /api/qc-runs/:id/export.csv` – download CSV export for a run.
+- `GET /api/qc-runs/:id/export.pdf` – HTML rendition suitable for PDF download.
+- `POST /api/rules/import` – multipart CSV import for risk, keyword, and additional rule tables (upsert via deterministic IDs).
+- `GET /api/disclaimers` – list stored disclaimers.
+- `POST /api/disclaimers` – create a new disclaimer.
+- `PUT /api/disclaimers/:id` – update an existing disclaimer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All routes are deployed as Vercel Functions (`runtime = nodejs`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Link Checking Rules
+- Concurrency limited to 6 via `p-limit`.
+- Rejects hosts containing `wwwd`, `dev`, or `staging`.
+- Follows redirects up to five hops (HEAD first, GET fallback).
+- Accepts final 2xx or redirects into `APPROVED_LINK_DOMAINS`.
+- Returns structured notes for invalid URLs, dev domains, or HTTP errors.
 
-## Deploy on Vercel
+## Deployment
+1. **Railway (Postgres)**
+   - Provision a PostgreSQL instance and capture the connection string.
+   - Run `npx prisma migrate deploy` against the Railway database.
+2. **Vercel**
+   - Import the repo, set the four environment variables (`DATABASE_URL`, `OPENAI_API_KEY`, `ALLOWED_PREVIEW_HOSTS`, `APPROVED_LINK_DOMAINS`).
+   - Ensure the project has egress to Braze preview URLs.
+   - Deploy; all API routes run on the Node.js runtime.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
+- `POST /api/qc-runs` includes an in-memory rate limiter (5 requests / 5 minutes per IP) suitable for MVP. Scale with a shared cache in production.
+- The document upload flow converts `.docx` copy docs to text client-side via `mammoth`.
+- `openai` Responses API output is parsed from `response.output_text` and stored verbatim as JSON in `CheckResult.details`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For further enhancements, consider adding background job processing, audit trails, richer analytics on rule coverage, and integration tests around link and GPT flows.

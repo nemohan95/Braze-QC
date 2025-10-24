@@ -1,103 +1,70 @@
-import Image from "next/image";
+import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <section className='space-y-10'>
+      <div className='rounded-2xl border border-slate-200 bg-white p-10 shadow-sm'>
+        <div className='mb-8 text-center'>
+          <SearchBar />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className='flex flex-col gap-6 md:flex-row md:items-center md:justify-between'>
+          <div className='max-w-2xl space-y-4'>
+            <span className='inline-flex items-center rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-indigo-700'>Email QC MVP</span>
+            <h1 className='text-3xl font-semibold text-slate-900 md:text-4xl'>Automate QC for Braze marketing emails</h1>
+            <p className='text-lg text-slate-600'>Validate copy against the approved doc, enforce entity-specific disclaimers, and catch risky links before send time.</p>
+            <div className='flex flex-wrap gap-3'>
+              <Link
+                href='/qc/new'
+                className='inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-500'
+              >
+                Start a New QC Run
+              </Link>
+              <Link
+                href='/qc'
+                className='inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100'
+              >
+                View Past Reports
+              </Link>
+              <Link
+                href='/help'
+                className='inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100'
+              >
+                Help & FAQ
+              </Link>
+            </div>
+          </div>
+          <div className='grid gap-3 text-sm text-slate-600'>
+            <div className='rounded-lg border border-slate-200 bg-slate-50 p-4'>
+              <h3 className='text-sm font-semibold text-slate-800'>Powered by GPT-4.1</h3>
+              <p className='mt-1'>Strict JSON schema ensures deterministic summaries and per-check outcomes.</p>
+            </div>
+            <div className='rounded-lg border border-slate-200 bg-slate-50 p-4'>
+              <h3 className='text-sm font-semibold text-slate-800'>Risk & Disclaimer Matrix</h3>
+              <p className='mt-1'>Import CSV rule packs for UK, EU, ROW, and EU CY entities.</p>
+            </div>
+            <div className='rounded-lg border border-slate-200 bg-slate-50 p-4'>
+              <h3 className='text-sm font-semibold text-slate-800'>Link Intelligence</h3>
+              <p className='mt-1'>Detect dev domains, follow redirects, and capture status codes for every URL.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='grid gap-6 md:grid-cols-3'>
+        <div className='rounded-xl border border-slate-200 bg-white p-6 shadow-sm'>
+          <h3 className='text-lg font-semibold text-slate-900'>Copy Doc Parity</h3>
+          <p className='mt-2 text-sm text-slate-600'>Paste the copy or upload a docx file. The QC run highlights mismatched paragraphs, missing CTAs, and envelope differences.</p>
+        </div>
+        <div className='rounded-xl border border-slate-200 bg-white p-6 shadow-sm'>
+          <h3 className='text-lg font-semibold text-slate-900'>Risk & Keyword Disclaimers</h3>
+          <p className='mt-2 text-sm text-slate-600'>Entity + silo combinations trigger the right variant, while vendor keywords enforce additional language.</p>
+        </div>
+        <div className='rounded-xl border border-slate-200 bg-white p-6 shadow-sm'>
+          <h3 className='text-lg font-semibold text-slate-900'>Exports & Sharing</h3>
+          <p className='mt-2 text-sm text-slate-600'>Download CSV or PDF reports and share the Braze preview link with stakeholders.</p>
+        </div>
+      </div>
+    </section>
   );
 }
